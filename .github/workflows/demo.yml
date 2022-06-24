@@ -1,13 +1,14 @@
-name: TestWorkflow
+name: TestWorkflows
+
 on:
- 
- workflow_dispatch:
+  workflow_dispatch:
   push:
     branches: [ "master" ]
   # pull_request:
   #   branches: [ "main" ]
 
-  env: file_name: python.py
+  env:
+    file_name: python.py
   
   jobs:
     
